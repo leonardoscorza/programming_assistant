@@ -2,7 +2,7 @@ class WikipediaConsulter
   require 'wikipedia'
 
   Wikipedia.Configure {
-    domain 'wikipedia.org'
+    domain 'pt.wikipedia.org'
     path   'w/api.php'
   }
 
