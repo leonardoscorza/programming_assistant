@@ -9,15 +9,15 @@ No primeiro tutorial eu explico como integrar a plataforma Api.ai com o Messenge
 <br />
 Nos próximos tutoriais vamos incrementar as ferramentas desse software acrescentando funções acessíveis pelo chat como:<br />
 <br />
-1. Pomodoro
-2. Ping de uma url desejada
-3. Monitoramente de Urls (alerta para quando sair do ar)
-4. Tópicos de Machine Learning
+1. Pomodoro<br />
+2. Ping de uma url desejada<br />
+3. Monitoramente de Urls (alerta para quando sair do ar)<br />
+4. Tópicos de Machine Learning<br />
 <br />
 Versões:
 <br />
-* Ruby version: 2.3.1
-* Rails version: 5.0
+* Ruby version: 2.3.1<br />
+* Rails version: 5.0<br />
 <br />
 
 Autor: Leonardo Scorza
