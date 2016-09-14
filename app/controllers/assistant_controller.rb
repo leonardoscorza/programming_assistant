@@ -1,6 +1,6 @@
 class AssistantController < ApplicationController
   def messenger
-    query = (params[:result].present?)? params[:result] : "Ruby On Rails"
+    query = (params[:result][:parameters]['any'].present?)? params[:result][:parameters]['any'] : "Ruby On Rails"
     page = WikipediaConsulter.find_by_name(query)
 
     response =
