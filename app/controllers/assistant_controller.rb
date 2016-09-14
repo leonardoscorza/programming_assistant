@@ -8,17 +8,9 @@ class AssistantController < ApplicationController
     response =
     {
       "speech": "#{text}... \b link completo: #{page.fullurl}",
-      "displayText": "#{text}... \b link completo: #{page.fullurl}",
+      "displayText": "#{text}... \b link completo: [Full Article](#{page.fullurl})",
 
-      "data": {"facebook": {
-                "text": 'abcd',
-                "attachment":{
-                "type":"image",
-                "payload":{
-                  "url": page.image_urls.first
-                  }
-                }
-              }
+      "data": {}
       },
       "source": "Programming Assitant"
     }
