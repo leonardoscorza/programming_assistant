@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  post '/wikipedia' => 'assistant#wikipedia'
+  post '/messenger' => 'assistant#messenger'
 end
