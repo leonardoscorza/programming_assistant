@@ -9,13 +9,15 @@ class AssistantController < ApplicationController
     {
       "speech": "#{text}... \b link completo: #{page.fullurl}",
       "displayText": "#{text}... \b link completo: #{page.fullurl}",
+
       "data": {"facebook": {
-        "attachment":{
-        "type":"image",
-        "payload":{
-          "url": page.image_urls.first
-          }
-        }
+                "attachment":{
+                "type":"image",
+                "payload":{
+                  "url": page.image_urls.first
+                  }
+                }
+              }
       },
       "source": "Programming Assitant"
     }
