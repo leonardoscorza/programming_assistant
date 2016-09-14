@@ -9,9 +9,7 @@ class AssistantController < ApplicationController
     {
       "speech": "#{text}... \b link completo: #{page.fullurl}",
       "displayText": "#{text}... \b link completo: [Full Article](#{page.fullurl})",
-
-      "data": {}
-      },
+      "data": "",
       "source": "Programming Assitant"
     }
 
