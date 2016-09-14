@@ -6,7 +6,7 @@ class AssistantController < ApplicationController
     text = (page.text.present?)? page.text.slice(0, 120) : ''
     response =
     {
-      "speech": "#{text}... \b link completo: #{page.fullurl}",
+      "speech": "#{page.image_urls.first} #{text}... \b link completo: #{page.fullurl}",
       "displayText": "#{text}... \b link completo: #{page.fullurl}",
       "data": "",
       "source": "Programming Assitant"
