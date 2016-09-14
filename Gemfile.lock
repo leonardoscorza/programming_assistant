@@ -115,6 +115,7 @@ GEM
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    wikipedia-client (1.6.2)
 
 PLATFORMS
   ruby
@@ -128,6 +129,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
+  wikipedia-client
 
 BUNDLED WITH
    1.12.5

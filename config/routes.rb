@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  post '/facebook_bot' => 'bot#facebook'
+  post '/wikipedia' => 'assistant#wikipedia'
 end
