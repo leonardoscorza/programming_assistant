@@ -4,11 +4,19 @@ class AssistantController < ApplicationController
     page = WikipediaConsulter.find_by_name(query)
 
     text = (page.text.present?)? page.text.slice(0, 120) : ''
+    p page.image_urls
     response =
     {
-      "speech": "#{page.image_urls.first} #{text}... \b link completo: #{page.fullurl}",
+      "speech": "#{text}... \b link completo: #{page.fullurl}",
       "displayText": "#{text}... \b link completo: #{page.fullurl}",
-      "data": "",
+      "data": {"facebook": {
+        "attachment":{
+        "type":"image",
+        "payload":{
+          "url": page.image_urls.first
+          }
+        }
+      },
       "source": "Programming Assitant"
     }
 
