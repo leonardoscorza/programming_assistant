@@ -11,6 +11,7 @@ class AssistantController < ApplicationController
       "displayText": "#{text}... \b link completo: #{page.fullurl}",
 
       "data": {"facebook": {
+                "text": 'abcd',
                 "attachment":{
                 "type":"image",
                 "payload":{
